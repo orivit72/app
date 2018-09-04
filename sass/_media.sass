@@ -1,0 +1,261 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.title
+		h2
+			font-size: 20px
+			line-height: 22px
+		h5
+			font-size: 14px
+		p	
+			font-size: 14px
+	#portfolio
+		.main-content
+			.works
+				.work-item
+					width: 30%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	main
+		overflow: auto
+	.title
+		h2
+			font-size: 32px
+			line-height: 34px
+		h5
+			font-size: 15px	
+	.sub_text
+		p
+			font-size: 14px
+	#services
+		.main-content
+			.left_block
+				.copy
+					width: 10%
+			.right_block-services
+				.text_block
+					width: 80%
+					height: 65%	
+	#portfolio
+		height: 100%
+		.main-content
+			height: 95%
+			.works
+				.work-item
+					width: 40%				
+	#contact
+		.main-content
+			.message
+				width: 45%								
+
+	
+
+
+									
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.title
+		h2
+			font-size: 20px
+			line-height: 22px
+			letter-spacing: 2px
+		h5
+			font-size: 14px
+		p	
+			font-size: 14px
+	main
+	 overflow: auto		
+	#home	
+		.main-content
+			flex-flow: column
+			.left_block
+				width: 100%
+				height: 40vh
+				.copy
+					width: 15%
+					.copy-text
+						white-space: nowrap
+						font-size: 12px
+				.offer
+					.offer-block
+						h1
+							font-size: 38px	
+							line-height: 40px
+						h4
+							font-size: 16px
+							letter-spacing: 5.7px		
+			.righ_block
+				width: 100%	
+				height: 60vh
+				.text_content
+					height: 60%
+					margin-bottom: 10px
+					text-align: center
+					.tytle
+						h2
+							font-size: 30px
+							line-height: 32px
+					.sub_text
+						margin: 10px 0
+						p
+							font-size: 14px
+	#about
+		width: 100%
+		height: 100vh
+		.main-content
+			flex-direction: column
+			.left_block
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				width: 100%	
+				height: 80vh
+				.copy
+					display: none
+				.text_block
+					text-align: center
+					height: 55%
+					width: 80%
+					.tytle
+						h2
+							font-size: 30px
+							line-height: 32px
+						h5
+							font-size: 14px
+							line-height: 20px
+					.sub_text
+						p
+							font-size: 14px	
+							margin: 5px 0	
+			.right_block-about
+				width: 100%	
+				height: 20vh
+				.icon_block
+					height: 80%
+					.icon
+						width: 13%
+	#services
+		height: 100vh
+		.main-content
+			flex-direction: column
+			justify-content: space-between
+			height: 100%
+			.left_block
+				display: none
+			.right_block-services
+				width: 100%
+				height: 100vh
+				.text_block
+					width: 90%
+					height: 65%
+					text-align: center
+	#portfolio
+		height: 100%	
+		.main-content
+			height: 90%
+			.works
+				.work-item
+					width: 90%			
+	#contact
+		height: 100vh
+		.main-content
+			height: 100%
+			.message
+				width: 90%
+				height: 60%
+				margin-bottom: 20px
+			.social_links
+				margin-bottom: 20px
+			.footer
+				height: 40px
+				font-size: 12px	
+	.menu
+		height: 100vh
+		&_branding,
+		&_nav	
+			float: none
+			width: 100%
+			min-height: 0
+			&.show
+				transform: translate3d(0, 0, 0)
+				
+		&_nav
+			height: 75vh
+			transform: translate3d(-100%, 0, 0)
+			font-size: 24px
+		&_branding
+			height: 25vh
+			transform: translate3d(100%, 0, 0)
+			.portrait
+				width: 110px
+				height: 110px		
+				
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	#home
+		.main-content
+			.left_block
+				.offer
+					.offer-block
+						h1
+							font-size: 32px
+						h4
+							font-size: 16px
+							letter-spacing: 3.6px	
+						p	
+							font-size: 14px
+
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

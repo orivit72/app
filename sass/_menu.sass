@@ -1,0 +1,107 @@
+@import "vars"
+.menu-btn
+	width: 40px
+	height: 33px
+	cursor: pointer
+	transition: .5s
+	.btn-line
+		background: #fff
+		width: 40px
+		height: 7px
+		margin-bottom: 6px
+		transition: .5s
+		&:nth-child(3)
+			margin-bottom: 0
+	&.active
+		transform: rotate(180deg)
+		.btn-line 
+			&:nth-child(1) 
+				transform: rotate(45deg) translate(9px, 5px)
+			&:nth-child(2) 
+				opacity: 0
+			&:nth-child(3)
+				transform: rotate(-45deg) translate(13px, -9px)
+.menu
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100vh
+	opacity: 0.9
+	visibility: hidden
+
+	&.show
+		visibility: visible
+	&_branding,
+	&_nav
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		justify-content: center
+		float: left
+		width: 50%
+		height: 100vh
+		overflow: hidden
+	&_nav
+		margin: 0
+		padding: 0
+		font-size: 25px
+		color: #fff
+		background: darken($midnight_blue, 5)
+		transform: translate3d(0, -100%, 0)
+		transition: .5s
+		text-transform: uppercase
+		&.show
+			transform: translate3d(0, 0, 0)	
+	&_branding
+		margin: 0
+		padding: 0
+		background: darken($midnight_blue, 2)
+		transform: translate3d(0, 100%, 0)
+		transition: .5s
+		&.show
+			transform: translate3d(0, 0, 0)	
+		.portrait
+			width: 250px
+			height: 250px	
+			background: url(../img/hope_fellgood.png)
+			background-size: cover
+			border-radius: 50%
+			border: 8px solid $orange 
+	.menu_nav-item
+		transform: translate3d(600px, 0, 0)
+		transition: .5s
+	.menu_nav-item 
+		a
+			transition: .5s
+			&:hover
+				color: $orange
+		&.show
+			transform: translate3d(0, 0, 0)
+		&.current > a 
+			color: $orange
+			
+@for $x from 1 through 6 
+	.menu_nav-item:nth-child(#{$x})
+		transition-delay: $x * .1s
+
+
+@import "media"	
+
+
+
+
+			
+	
+			
+
+		
+
+
+
+		
+			
+
+			
